@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        main{
+            height: 100vh;
+            width: 100vw;
+            background-color: purple;
+            background-image: url(https://e1.pxfuel.com/desktop-wallpaper/316/177/desktop-wallpaper-neon-retro-chill-chill-thumbnail.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+        form{
+            height: 350px;
+            width: 300px;
+            /* background-color: aliceblue; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            border-radius: 10px;
+            backdrop-filter:blur(25px);
+            
+
+        }
+        div{
+            height: 40px;
+            width: 280px;
+            border: 2px solid wheat;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 20px;
+
+        }
+        input::placeholder{
+            color: white;
+        }
+        input
+        {
+            height: 100%;
+            width: 90%;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            /* border: 0.5px solid white; */
+        }
+        button{
+            height: 40px;
+            width: 80%;
+            border-radius: 30px;
+            border: none;
+            background-color: white;
+        }
+        h2{
+            color: wheat;
+            font-size: 20px;
+
+
+        }
+        i{
+            color: aliceblue;
+        }
+        p{
+            color: white;
+        }
+        a{
+            border: none;
+            color: aliceblue;
+            font-family: bold;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form action="">
+        <h2>login</h2>
+        <br>
+        <div>
+            <input type="text"placeholder="user name">
+            <i class="fa-solid fa-user"></i>
+        </div>
+        <div>
+            <input type="text" placeholder="password">
+            <i class="fa-solid fa-lock"></i>
+        </div>
+        <button>login</button>
+        <p>dont have account <a href=""> Register</a></p>
+        </form>
+
+    </main>
+    
+</body>
+</html>

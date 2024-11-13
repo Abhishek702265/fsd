@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        main{
+            height:100vh ;
+            width: 100vw;
+            background-color: skyblue;
+            display: flex;
+            justify-content:center ;
+            align-items: center;
+
+        }
+        form{
+            height: 80vh;
+            width: 20vw;
+            background-color: black;
+            border-radius: 10px;
+            
+        }
+        form input{
+            height:50px ;
+            width: 264px;
+            background-color:black;
+            color: white;
+            border: none;
+            outline: none;
+            text-align: right;
+            padding-right: 15px;
+
+        }
+        form div{
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+            padding-bottom: 35px;
+        }
+        form button{
+            height:50px;
+            width: 50px;
+            border-radius: 100%;
+            background-color:rgb(51,51,51);
+            border: none;
+            color: white;
+            gap: 10px;
+        }
+            .bb{
+                width: 100px;
+                border-radius: 20px;
+            }
+        
+    </style>
+</head>
+<body>
+    <main>f
+          <form action="">
+            <input type="text" name="" id="">
+          
+            <div>
+                <button style="background-color:grey;">Ac</button>
+                <button style="background-color: grey;">Del</button>
+                <button style="background-color: grey;">%</button>
+                <button style="background-color: orange;">/</button>
+            </div>
+            <br>
+            <div>
+                <button onclick="input()">7</button>
+                <button onclick="input()">8</button>
+                <button onclick="input()">9</button>
+                <button style="background-color: orange;">*</button>
+            </div>
+            <br>
+            <div>
+                <button onclick="input()">4</button>
+                <button onclick="input()">5</button>
+                <button onclick="input()">6</button>
+                <button style="background-color: orange;">-</button>
+            </div>
+            <br>
+            <div>
+                <button onclick="add_one()">1</button>
+                <button onclick="add_two()">2</button>
+                <button onclick="add_three()">3</button>
+                <button style="background-color: orange;">+</button>
+            </div>
+            <br>
+            <div>
+                <button class="bb" onclick="add_value(this)"0></button>
+                <button onclick="add_value(this)">.</button>
+                <button style="background-color: orange;" onclick="result"></button>
+
+            </div>
+
+          
+    </main>
+    <script>
+    
+    let inp=document.querySelector('input')
+        console.log(e)
+
+        function add_value(e){
+            let prvious_value=inp.value
+            inp.value=prvious_value+e.innerText
+        }
+        
+    </script>
+</body>
+</html>

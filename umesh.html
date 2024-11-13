@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="odd">one</h1>
+    <h1 class="even">two</h1>
+    <h1 class="odd">three</h1>
+    <h1 class="even">four</h1>
+    <h1 class="odd">five</h1>
+    <h1 class="even">six</h1>
+     
+    <button onclick="odd-btn()">odd</button>
+    <button onclick="even-btn()">even</button>
+       
+    <script>
+        let odd=document.getElementsByClassName('odd')
+        console.log(odd)
+        let even=document.getElementsByClassName('even')
+        console.log(even)
+
+        function odd-btn(){
+            for(let i=0;i<odd;i++){
+                odd[i].style.color='yellow'
+            }
+        }
+        function even-btn(){
+            for(
+              let i=0;i<even;i++
+            ){
+                even[i].style.color='red'
+            }
+        }
+     </script>
+</body>
+</html>
